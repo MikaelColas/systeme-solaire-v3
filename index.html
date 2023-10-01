@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systeme Solaire Mika</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <h1>Systeme Solaire Version 3</h1>
+    <div class="main">
+        <div class="boutons-planetes">
+            <button data-orbite="soleil" data-id='0'>Soleil</button>
+            <button data-orbite="mercure" data-id='1'>Mercure</button>
+            <button data-orbite="venus" data-id='2'>Venus</button>
+            <button data-orbite="terre" data-id='3'>Terre</button>
+            <button data-orbite="mars" data-id='4'>Mars</button>
+            <button data-orbite="jupiter" data-id='5'>Jupiter</button>
+            <button data-orbite="saturne" data-id='6'>Saturne</button>
+            <button data-orbite="uranus" data-id='7'>Uranus</button>
+            <button data-orbite="neptune" data-id='8'>Neptune</button>
+        </div>
+
+        <div class="soleil" id="soleil">
+
+            <div class="mercure-orbite">
+                <div class = "mercure infos_mercure">
+                </div>
+            </div>
+
+            <div class="venus-orbite">
+                <div class = "venus">
+                </div>
+            </div>
+
+            <div class="terre-orbite">
+                <div class = "terre">
+                    <div class="lune-orbite">
+                        <div class="lune">     
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mars-orbite">
+                <div class = "mars">
+                </div>
+            </div>
+
+            <div class="jupiter-orbite">
+                <div class = "jupiter">
+                </div>
+            </div>
+
+            <div class="saturne-orbite">
+                <div class = "saturne">
+                </div>
+            </div>
+
+            <div class="uranus-orbite">
+                <div class = "uranus">
+                </div>
+            </div>
+        
+            <div class="neptune-orbite">
+                <div class = "neptune">
+                </div>
+            </div>
+
+            <div class="infos-planetes" id = "infos-planetes">
+                <p class="nom"></p>
+                <p class="taille"></p>
+                <p class="revolution"></p>
+                <p class="vitesse"></p>
+                <p class="distance"></p>
+                <p class="funFact"></p>
+                <p class="satellites"></p>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <script src="descriptions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
