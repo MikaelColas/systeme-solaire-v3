@@ -1,4 +1,4 @@
-const planetButtons = document.querySelectorAll('[data-orbite]');// Sélectionne tous les boutons avec l'attribut data-orbite
+const planetButtons = document.querySelectorAll('[data-btn]');// Sélectionne tous les boutons avec l'attribut data-orbite
 const infosPlanetes = document.getElementById("infos-planetes");
 const soleil = document.getElementById("soleil");
 
@@ -8,8 +8,8 @@ const soleil = document.getElementById("soleil");
 
 //Lorsqu'on survole un bouton
 function highlightOrbite(event) {
-    // Obtenir le nom de la planète à partir de l'attribut data-orbite
-    const planetName = event.target.getAttribute('data-orbite'); 
+    // Obtenir le nom de la planète à partir de l'attribut data-btn
+    const planetName = event.target.getAttribute('data-btn'); 
     const orbiteElement = document.querySelector(`.${planetName}-orbite`); // Sélectionne la classe orbite correspondante
     if (orbiteElement){
         orbiteElement.style.border = "3px solid #f9c05f"; //higlight l'orbite
@@ -27,8 +27,8 @@ function highlightOrbite(event) {
 
 //Lorsqu'on arrete de survoler un bouton
 function unhighlightOrbite(event) {
-    // target l'attribut data-orbite du bouton de la planete (event)
-    const planetName = event.target.getAttribute('data-orbite');
+    // target l'attribut data-btn du bouton de la planete (event)
+    const planetName = event.target.getAttribute('data-btn');
     // Sélectionne la classe orbite correspondante
     const orbiteElement = document.querySelector(`.${planetName}-orbite`);
     if (orbiteElement){
@@ -49,7 +49,7 @@ function unhighlightOrbite(event) {
 
 //updater les infos de la planete dont le bouton est survolé
 function updateInfosPlanetes(event) {
-    const planetName = event.target.getAttribute('data-orbite');
+    const planetName = event.target.getAttribute('data-btn');
     const planetDescription = planetDescriptions[planetName];
     const infosPlanetes = document.getElementById("infos-planetes");
 
